@@ -47,7 +47,7 @@
         <h4 class="font-weight-bold text-center text-capitalize text-dark">Vacantes Destacadas</h4>
         <div class="row" th:each="vacante:${vacantes}">
           <div class="col-md-3">            
-            <td><img th:src="@{/logos/{img}(img=${vacante.imagen})}" width="200" height="200"></td>  
+            <td><img th:src="@{/images/{img}(img=${vacante.imagen})}" width="200" height="200"></td>  
           </div>
           <div class="col-md-9">
             <h2 th:text="${vacante.nombre}"></h2>
